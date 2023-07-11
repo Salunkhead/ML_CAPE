@@ -10,9 +10,7 @@ headers = arr[0]
 data = arr[1:]
 
 Prcsd_data, label = Pre_Process.Process(data)  # Pre-Processing the dataset
-# Vec_data = Vectorization.Vectorize(Prcsd_data)  # Vectorization of the dataset
-print("Loading")
-Vec_data = np.load('Processed/vect_data.npy', allow_pickle=True)
+Vec_data = Vectorization.Vectorize(Prcsd_data)  # Vectorization of the dataset
 print("Random_Forest Classifier Running")
 Random_Forest.Classify(Vec_data, label)
 Random_Forest_KFold.Classify(Vec_data, label)
