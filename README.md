@@ -10,7 +10,7 @@ Softwares Used:
 GUI.py:- User interface code to select the analysis.
 Run.py:- Main code starts here.
 Pre_Process.py:- Pre-processing the dataset and extracting the labels from it.
-Vectorization.py:- Vectorizing the contents of the Article.
+Vectorization.py:- Vectorizing the contents of the Article. SentenceBERT tokenizer is used for the Vectorization purpose.
 Random_Forest.py:- The Machine Learning Classifier used to predict the Article type is the Random Forest classifier and it is implemented in this file. The model is analysed by varying the Training data(%) and the results are displayed.
 Random_Forest_KFold.py:- The implementation of the Random Forest model in order to analyse based on the Cross validation method called K-Fold analysis.
 
